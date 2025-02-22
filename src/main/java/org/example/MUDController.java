@@ -1,8 +1,4 @@
 package org.example;
-import org.example.Entity.NPC;
-import org.example.Entity.Player;
-import org.example.Entity.Room;
-
 import java.util.*;
 
 public class MUDController {
@@ -18,7 +14,7 @@ public class MUDController {
 
     public void runGameLoop() {
         System.out.println("Welcome to the MUD game!");
-        while (running) {
+        while (running == true) {
             System.out.print("> ");
             String input = scanner.nextLine().trim().toLowerCase();
             handleInput(input);
